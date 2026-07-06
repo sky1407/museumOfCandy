@@ -1,0 +1,212 @@
+body {
+  background: #f5d9d5;
+  font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
+}
+
+.blurb h2 {
+  color: #EA1C2C;
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+
+.blurb p {
+  color: #f498b8;
+  font-weight: 100;
+  font-size: 1.125rem;
+  line-height: 2;
+}
+
+.blurb .btn {
+  border-color: #EA1C2C;
+  color: #EA1C2C;
+  font-weight: 300;
+  transition: all 0.3s ease;
+}
+
+.blurb .btn:hover {
+  background: #EA1C2C;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(234, 28, 44, 0.4);
+}
+
+.content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#mainNavbar {
+  font-size: 1.5rem;
+  font-weight: 100;
+  background: rgba(222, 192, 222, 0.3);
+  transition: background 0.5s ease;
+}
+
+#mainNavbar .nav-link {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+#mainNavbar .nav-link:hover {
+  color: #EA1C2C;
+}
+
+#mainNavbar .navbar-brand {
+  color: #EA1C2C;
+  font-size: 1.5rem;
+}
+
+.navbar.scrolled {
+  background: rgb(222,192,222);
+  transition: background 500ms;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#headingGroup span {
+  color: #EA1C2C;
+}
+
+#headingGroup h1 {
+  font-weight: 100;
+  font-size: 4rem;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.card-body {
+  background: white;
+  padding: 2rem;
+}
+
+.card-title {
+  color: #EA1C2C;
+  font-weight: 400;
+}
+
+.card-text {
+  color: #f498b8;
+  font-weight: 300;
+}
+
+/* Tickets Section */
+.border.rounded {
+  border-color: #f498b8 !important;
+  transition: all 0.3s ease;
+}
+
+.border.rounded:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.display-4 {
+  color: #EA1C2C;
+  font-weight: 300;
+}
+
+.btn-danger {
+  background: #EA1C2C;
+  border: none;
+  padding: 10px 30px;
+  font-weight: 300;
+  transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+  background: #c41230;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(234, 28, 44, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  #headingGroup h1 {
+    font-weight: 100;
+    font-size: 3rem;
+  }
+  
+  .blurb h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  #headingGroup h1 {
+    font-weight: 100;
+    font-size: 2.5rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Smooth image hover */
+img.img-fluid {
+  transition: transform 0.5s ease;
+}
+
+img.img-fluid:hover {
+  transform: scale(1.02);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5d9d5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #EA1C2C;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c41230;
+}
